@@ -1,0 +1,29 @@
+/* map */
+#map {
+  height:600px;}
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+/* form*/
+
+#form{
+      display:flex;
+      flex-wrap:wrap;
+      max-width:fit-content;
+      width:100%;
+}
+.namebox{}
+.mailbox{ }
+.phonebox{}
+.messagebox{}
+.submitbox{}
+#fname{height:30px; width:200px; margin: 5px 5px 5px;}
+#lname{height:30px; width:200px; margin: 5px 5px 5px;}
+#email{height:30px; width:200px; margin: 5px 5px 5px;}
+#phone{height:30px; width:200px; margin: 5px 5px 5px;}
+#message{height:50px; width:200px; margin: 5px 5px 5px;}

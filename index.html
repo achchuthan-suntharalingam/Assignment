@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="project1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>assignment01</title>
   </head>
   <body>
@@ -14,34 +16,34 @@
         <a class="navbar-brand" href="#">Web Amigo</a>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-warning active" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="/home/achchu/Documents/Uki/project/Assignment/error.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="/home/achchu/Documents/Uki/project/Assignment/error.html">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="D:\uki\assignment1_achchuthan\product_page.html">Portfolio</a>
+            <a class="nav-link" href="/home/achchu/Documents/Uki/project/Assignment/product_page.html">Portfolio</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Option 1</a>
               <a class="dropdown-item" href="#">Option 2</a>
-              <a class="dropdown-item" href="#">Option 3</a>
             </div>
+            </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="/home/achchu/Documents/Uki/project/Assignment/map.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" href="#" role="button">Get Started</a>
+            <a class="btn btn-danger" href="#" id="get">Get Started</a>
           </li>
           </li>
         </ul>
@@ -52,26 +54,51 @@
       <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-4"><h2>Better Digital Experience With <strong>Web Amigo</strong></h2>
           <p>We are team of talented designers making websites with bootstrap</p>
-          <a class="btn btn-primary" id="button2" href="#" role="button">Get Started</a>
+          <a class="btn btn-danger" id="button2" href="#" role="button">Get Started</a>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-4"><img class="img-fluid" src="D:\uki\assignment1_achchuthan\images\img1.png"></div>
+        <div class="col-sm-4 col-md-4 col-lg-4"><div class="slider">
+
+          <div class="slider-item active">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/img1.png" alt="Slider-1">
+          </div>
+          <div class="slider-item">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/carousalimg2.png" alt="Slider-2">
+          </div>
+          <div class="slider-item">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/carousalimg3.png" alt="Slider-3">
+          </div>
+          <div class="slider-item">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/carousalimg4.png" alt="Slider-4">
+          </div>
+      
+          <div class="slider-btns">
+            <button id="btn-prev">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button id="btn-next">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="dots"></div>
+         </div>
+      </div>
       </div>
     </section>
     <section> 
       <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4"><img class="img-fluid" src="D:\uki\assignment1_achchuthan\images\img2.png">
+        <div class="col-sm-4 col-md-4 col-lg-4"><img class="img-fluid" id="img2" src="/home/achchu/Documents/Uki/project/Assignment/images/img2.png">
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4">
           <h3>Voluptatem dignissimos provident quasi</h3>
           <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus, harum nemo sit delectus est quo? Illo, exceptur</p>
           <div class="clearfix">
             <div>
-              <img src="D:\uki\assignment1_achchuthan\images\img3.png" id="img3">
+              <img src="/home/achchu/Documents/Uki/project/Assignment/images/img3.png" id="img3">
               <h6>Corporis voluptates sit</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div>
-              <img src="D:\uki\assignment1_achchuthan\images\img4.png" id="img4">
+              <img src="/home/achchu/Documents/Uki/project/Assignment/images/img4.png" id="img4">
               <h6>Ullamco laboris nisi</h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -87,38 +114,39 @@
         <hr class="hr">
       </div>
       <div>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" id="navbr">
           <li class="nav-item">
-            <a class="nav-link active text-warning" href="#">All</a>
+            <a class="nav-link text-dark" id="filter" data-filter="all" href="#all">All</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">App</a>
+            <a class="nav-link text-dark" id="filter" data-filter="app" href="#app">App</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Card</a>
+            <a class="nav-link text-dark" id="filter" data-filter="cards" href="#cards">Cards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark">Web</a>
+            <a class="nav-link text-dark" id="filter" data-filter="web" href="#web">Web</a>
           </li>
         </ul>
       </div>
         <div class="bgclr">
         <div class="row text-center imagegrid">
-          <div class="column">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg1.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg2.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg3.jpg" id="gridimg">
+          <div class="column app">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg1.jpg" id="gridimg">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg2.jpg" id="gridimg">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg3.jpg" id="gridimg">
           </div>
-          <div class="column">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg4.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg5.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg6.jpg" id="gridimg">
+          <div class="column web">
+              <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg7.jpg" id="gridimg">
+              <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg8.jpg" id="gridimg">
+              <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg9.jpg" id="gridimg">
+            </div>
+          <div class="column cards">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg4.jpg" id="gridimg">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg5.jpg" id="gridimg">
+            <img src="/home/achchu/Documents/Uki/project/Assignment/images/gridimg6.jpg" id="gridimg">
           </div>
-          <div class="column">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg7.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg8.jpg" id="gridimg">
-            <img src="D:\uki\assignment1_achchuthan\images\gridimg9.jpg" id="gridimg">
-          </div>
+          
         </div>
       </div>
     </section><br><br>
@@ -131,10 +159,10 @@
       </div>
       <div class="container">
         <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4">
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\photo1.jpg" id="grid"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\photo2.jpg" id="grid"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\photo3.jpg" id="grid"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\photo4.jpg" id="grid"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/photo1.jpg" id="grid"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/photo2.jpg" id="grid"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/photo3.jpg" id="grid"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/photo4.jpg" id="grid"></div>
         </div>
       </div>
     </section><br><br>
@@ -148,12 +176,12 @@
       
       <div class="container-well">
         <div class="row row-cols-6 row-cols-sm-6 row-cols-md-6 text-center">
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo1.png" id="clients1"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo2.png" id="clients2"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo3.png" id="clients3"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo4.gif" id="clients4"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo5.png" id="clients5"></div>
-          <div class="col"><img src="D:\uki\assignment1_achchuthan\images\logo6.jpg" id="clients6"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo1.png" id="clients1"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo2.png" id="clients2"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo3.png" id="clients3"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo4.gif" id="clients4"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo5.png" id="clients5"></div>
+          <div class="col"><img src="/home/achchu/Documents/Uki/project/Assignment/images/logo6.jpg" id="clients6"></div>
         </div>
       </div>
       <div class="circle">
@@ -249,5 +277,6 @@
     
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>

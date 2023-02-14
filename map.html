@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="map.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4" id="map"></div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container bg-light con1pg2">
+        <p>Karaveddy Centre, Karaveddy, Jaffna, SriLanka.<br>
+          <strong>Phone</strong> :+94766410882<br>
+          <strong>Email</strong> :achchu@gmail.com<br>
+          <strong>Fax</strong> :N/A<br><br>
+          <h5>Want to Know More?? Drop us a Mail</h5>
+          <hr id="hrpage2">
+        </p>
+      </div>
+      <div class="container validationform">
+        <form id="form">
+          <div class="namebox"><label for="name">First Name:</label>
+          <input type="text" id="fname" name="fname" required></div>
+
+          <div class="namebox"><label for="name">Last Name:</label>
+          <input type="text" id="lname" name="lname" required></div>
+      
+          <div class="mailbox"><label for="email">Email:</label>
+          <input type="email" id="email" name="email" required></div>
+      
+          <div class="phonebox"><label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" required></div>
+      
+          <div class="messagebox"><label for="message" id="messagebox">Message:</label>
+          <textarea id="message" name="message" required></textarea></div>
+      
+          <div class="submitbox"><input type="submit" value="SEND"></div>
+        </form> 
+      </div>
+      
+    </div>
+  </div>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap&v=weekly"
+      defer></script>
+  <script src="map.js"></script>
+</body>
+</html>

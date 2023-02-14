@@ -1,8 +1,7 @@
 .nav-item{padding-left:10px;}
 .navbar-nav{margin-left:30%;}
 .navbar-brand{margin-left: 10%;}
-.btn{background-color: coral;
-    border-radius: 25px;
+.btn{border-radius: 25px;
     border: 0px;}
 img{height:300px; height:300px;}
 .section2{background-color: antiquewhite;
@@ -28,6 +27,74 @@ img{height:300px; height:300px;}
 #clients6{width:180px; height:110px;}
 .circle{text-align: center; padding-bottom: 20px;}
 .bgclr{background-color:antiquewhite;}
+
+
+/* corousal */
+.slider{
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    user-select: none;
+  }
+  .silder img{
+    width: 100%;
+    height: auto;
+  }
+  .slider-item,
+  .hidden
+  {
+  display: none;
+  }
+  .active{
+    display: block;
+    animation: fadeAnimation 0.5s;
+  }
+  .slider-btns{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    visibility: hidden;
+  }
+    .slider-btns button{
+    font-size: 20px;
+    background-color:antiquewhite;
+    border:none;
+    color:coral;
+    height:25px;
+    line-height: 10px;
+    cursor:pointer;
+  }
+  .slider:hover .slider-btns{
+  visibility: visible;
+  }
+  @keyframes fadeAnimation {
+    0%{opacity: 0;}
+    100%{opacity: 1;transition: opacity linear;}
+  }
+  .dots{
+    background-color: rgba(234, 11, 11, 0.5);
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+  }
+  .dot{
+    width: 10px;
+    height: 10px;
+    background-color:coral;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .dot-active{
+    background-color:red;
+  }
 
 
 
